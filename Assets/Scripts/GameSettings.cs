@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class GameSettings : MonoBehaviour
+public class GameSettings : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private TMP_Dropdown resolutionDropdown;
+    [SerializeField] private Toggle fullScreenToggle;
 
     private void Start()
     {
         SetupResolutions();
+        SetFullScreen(fullScreenToggle.isOn);
     }
 
     public void SetResolution(int resolutionIndex)
@@ -54,5 +57,15 @@ public class GameSettings : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = resolutionIndex;
         resolutionDropdown.RefreshShownValue();
+    }
+
+    public void LoadGame(GameData data)
+    {
+        fullScreenToggle.isOn = data.isFullScreen;
+    }
+
+    public void SaveGame(ref GameData data)
+    {
+        data.isFullScreen = fullScreenToggle.isOn;
     }
 }
