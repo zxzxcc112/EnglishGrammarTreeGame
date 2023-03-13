@@ -6,8 +6,6 @@ public class SyntaxTreeConverter
 {
     //將SyntaxTree轉換成不同的資料的表現方式
 
-    private static float rootAnchorX = 0.5f;
-    private static float rootAnchorY = 1f;
 
     //將SyntaxTree轉換成string
     public static string TreeToString(SyntaxTreeNode root)
@@ -53,9 +51,8 @@ public class SyntaxTreeConverter
         }
 
         SyntaxTreeNode root = place.GetComponentInChildren<SyntaxTreeNode>();
-        root.GetComponent<RectTransform>().anchorMax = new Vector2(rootAnchorX, rootAnchorY);
-        root.GetComponent<RectTransform>().anchorMin = new Vector2(rootAnchorX, rootAnchorY);
-        root.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, NodeViewer.Step);
+        root.GetComponent<RectTransform>().anchoredPosition = 
+            new Vector2(0f, place.GetComponent<RectTransform>().rect.max.y + SyntaxTreeNode.Step);
     }
 
     private static SyntaxTreeNode CreateNode(SyntaxTreeNode prefab, Transform parent)
@@ -81,21 +78,21 @@ public class SyntaxTreeConverter
         {
             if (child.TryGetComponent(out SyntaxTreeNode _n))
             {
-                newSpace += _n.viewer.SpaceSize;
+                newSpace += _n.SpaceSize;
                 children.Add(_n);
             }
         }
 
         if (newSpace > 0)
-            node.viewer.SpaceSize = newSpace;
+            node.SpaceSize = newSpace;
 
-        float lastChildPos = -(node.viewer.SpaceSize / 2);
+        float lastChildPos = -(node.SpaceSize / 2);
 
         foreach(SyntaxTreeNode chNode in children)
         {
             chNode.GetComponent<RectTransform>().anchoredPosition =
-                new Vector2(lastChildPos + chNode.viewer.SpaceSize / 2, NodeViewer.Step);
-            lastChildPos += chNode.viewer.SpaceSize;
+                new Vector2(lastChildPos + chNode.SpaceSize / 2, SyntaxTreeNode.Step);
+            lastChildPos += chNode.SpaceSize;
         }
     }
 }

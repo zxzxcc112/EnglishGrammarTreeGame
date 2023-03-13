@@ -39,13 +39,6 @@ public class PartOfSpeechItem : MonoBehaviour, IBeginDragHandler, IEndDragHandle
         m_TMP = GetComponentInChildren<TextMeshProUGUI>();
     }
 
-    private void Update()
-    {
-        //Debug.Log(DetectedParent == m_defaultDetectedParent);
-    }
-
-
-
     //----------------------------------------------
     //Detect node method
     //----------------------------------------------
@@ -98,9 +91,9 @@ public class PartOfSpeechItem : MonoBehaviour, IBeginDragHandler, IEndDragHandle
     //----------------------------------------------
     public void OnBeginDrag(PointerEventData eventData)
     {
-        m_origParent = m_rectTransform.parent;
-        m_rectTransform.SetParent(m_rectTransform.GetComponentInParent<Canvas>().transform);
-        m_rectTransform.SetAsLastSibling();
+        m_origParent = transform.parent;
+        transform.SetParent(m_rectTransform.GetComponentInParent<Canvas>().transform);
+        transform.SetAsLastSibling();
 
         m_image.raycastTarget = false;
     }
@@ -115,7 +108,7 @@ public class PartOfSpeechItem : MonoBehaviour, IBeginDragHandler, IEndDragHandle
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        m_rectTransform.SetParent(m_origParent);
+        transform.SetParent(m_origParent);
 
         m_image.raycastTarget = true;
     }

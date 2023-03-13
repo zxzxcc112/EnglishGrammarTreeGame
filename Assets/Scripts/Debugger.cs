@@ -60,6 +60,11 @@ public class Debugger : MonoBehaviour
         id = System.Guid.NewGuid().ToString();
     }
 
+    public void DebugMessage(string message)
+    {
+        Debug.Log(message);
+    }
+
     public override string ToString()
     {
         StringBuilder info = new StringBuilder();

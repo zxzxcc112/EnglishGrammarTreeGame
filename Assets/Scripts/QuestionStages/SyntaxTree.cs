@@ -39,6 +39,10 @@ public class SyntaxTree : MonoBehaviour, IDropHandler
         line.Initialize(line.transform.parent, line.transform.parent.parent);
     }
 
+
+    //-----------------------------------------
+    //use to test    
+    //-----------------------------------------
     public void GetTreeString()
     {
         SyntaxTreeNode[] nodes = transform.GetComponentsInChildren<SyntaxTreeNode>();
@@ -81,6 +85,7 @@ public class SyntaxTree : MonoBehaviour, IDropHandler
 
     public void MakeTree(string str)
     {
+        str = "[1[2][3]]";
         SyntaxTreeConverter.StringToTree(str, transform, syntaxTreeNodePrefab);
     }
 }

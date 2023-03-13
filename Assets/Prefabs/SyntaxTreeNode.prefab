@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 4881118658773499546}
   - component: {fileID: 4881118658773499547}
   - component: {fileID: 4881118658773499748}
-  - component: {fileID: 669171260587248594}
+  - component: {fileID: 8477661528253282708}
   m_Layer: 5
   m_Name: SyntaxTreeNode
   m_TagString: Untagged
@@ -228,8 +228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DeleteSelf: {fileID: 5981247790426750350}
---- !u!58 &669171260587248594
-CircleCollider2D:
+--- !u!60 &8477661528253282708
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -241,9 +241,21 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -50}
-  serializedVersion: 2
-  m_Radius: 100
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 50}
+      - {x: -200, y: -200}
+      - {x: 200, y: -200}
 --- !u!1 &4881118660515351660
 GameObject:
   m_ObjectHideFlags: 0

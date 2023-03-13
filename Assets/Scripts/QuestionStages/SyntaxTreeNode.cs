@@ -16,13 +16,19 @@ public class SyntaxTreeNode : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     private RectTransform m_rectTransform;
     private TextMeshProUGUI m_text;
     
-    public NodeViewer viewer;
+
+    //for auto layout
+    public static float MarginX = 25f;
+    public static float Step = -120f;
+    public float SpaceSize { get; set; }
+
 
     private void Awake()
     {
         m_rectTransform = GetComponent<RectTransform>();
         m_text = GetComponentInChildren<TextMeshProUGUI>();
-        viewer = new NodeViewer(m_rectTransform);
+
+        SpaceSize = m_rectTransform.rect.width + MarginX * 2;
     }
 
     public void Initialize(Vector2 position, string partOfSpeech)
