@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "534005174254",
+    "firebase_url": "https://syntaxtreegame-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "syntaxtreegame",
+    "storage_bucket": "syntaxtreegame.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534005174254:android:44de2e6fff17fffe6808ff",
+        "android_client_info": {
+          "package_name": "com.company.SyntaxTreeGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534005174254-v96s06r00om92sgj4tdc1vngkkq98uqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKYlTtASmZOFSCtamDcr4g8nzQZy6deAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534005174254-v96s06r00om92sgj4tdc1vngkkq98uqs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534005174254-tae23k7k3925gc6d4pieccivemf6h0r2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.company.SyntaxTreeGame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

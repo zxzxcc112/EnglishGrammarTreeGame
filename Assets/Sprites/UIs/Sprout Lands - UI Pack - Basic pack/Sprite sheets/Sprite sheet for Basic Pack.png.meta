@@ -108,8 +108,8 @@ TextureImporter:
       name: Sprite sheet for Basic Pack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 157
+        x: 11
+        y: 201
         width: 26
         height: 28
       alignment: 0
@@ -1101,7 +1101,7 @@ TextureImporter:
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 7, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1122,7 +1122,7 @@ TextureImporter:
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 5, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -6772,7 +6772,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite sheet for Basic Pack_202: 1852847969
+      Sprite sheet for Basic Pack_42: -1854821686
       Sprite sheet for Basic Pack_169: 390847044
       Sprite sheet for Basic Pack_123: 849803388
       Sprite sheet for Basic Pack_138: 616339167
@@ -6926,13 +6926,13 @@ TextureImporter:
       Sprite sheet for Basic Pack_43: 770734775
       Sprite sheet for Basic Pack_278: -1284395069
       Sprite sheet for Basic Pack_236: -1001742286
-      Sprite sheet for Basic Pack_33: 473288966
       Sprite sheet for Basic Pack_308: 900376861
       Sprite sheet for Basic Pack_154: -1469422071
-      Sprite sheet for Basic Pack_143: 1481742741
       Sprite sheet for Basic Pack_126: 1881132310
-      Sprite sheet for Basic Pack_21: 1789995702
+      Sprite sheet for Basic Pack_33: 473288966
       Sprite sheet for Basic Pack_78: -1160064765
+      Sprite sheet for Basic Pack_21: 1789995702
+      Sprite sheet for Basic Pack_143: 1481742741
       Sprite sheet for Basic Pack_245: 1558432107
       Sprite sheet for Basic Pack_226: -1274600629
       Sprite sheet for Basic Pack_289: 513154914
@@ -7088,7 +7088,7 @@ TextureImporter:
       Sprite sheet for Basic Pack_280: 632600765
       Sprite sheet for Basic Pack_58: 1762726422
       Sprite sheet for Basic Pack_285: -72713334
-      Sprite sheet for Basic Pack_42: -1854821686
+      Sprite sheet for Basic Pack_202: 1852847969
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

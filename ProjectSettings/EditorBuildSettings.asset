@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Practice.unity
+    guid: 191ed85467c61b5449c66168f0845437
+  - enabled: 0
     path: Assets/Scenes/StartMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MakeSyntaxTree.unity
     guid: c2b8965be7d591c40b74ff5c0dea2fc0
+  - enabled: 0
+    path: Assets/Scenes/World.unity
+    guid: 3efd4015f3d98394ab7d7cc68fddc1f7
   m_configObjects: {}
